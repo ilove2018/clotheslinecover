@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'IoTClothesLineCover' });
+  res.render('index', { title: 'IoT ClothesLine Cover' });
 });
 
 router.get('/darksky', function(req, res, next) {
