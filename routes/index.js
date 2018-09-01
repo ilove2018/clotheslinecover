@@ -27,6 +27,7 @@ request(options, function (error, response, body) {
     arduino= 0;
   }
 
+  console.log('Data sent: ', arduino)
   res.json(arduino);
   // res.json({
   //   timezone: data.timezone,
