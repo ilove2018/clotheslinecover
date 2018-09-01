@@ -20,11 +20,11 @@ request(options, function (error, response, body) {
 
   var data = JSON.parse(body);
   
-  var arduino = cover;
+  var arduino = 1024;
   if (data.currently.icon==='rain') {
-    arduino= cover;
+    arduino= 1024;
   }else {
-    arduino= uncover;
+    arduino= 0;
   }
 
   console.log('Data sent: ', arduino)
