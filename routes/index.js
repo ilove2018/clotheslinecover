@@ -20,15 +20,15 @@ request(options, function (error, response, body) {
 
   var data = JSON.parse(body);
   
-  var arduino = 10;
+  var arduino = 0;
   if (data.currently.icon==='rain') {
-    arduino= 10;
+    arduino= 0;
   }else {
-    arduino= 5;
+    arduino= 1;
   }
 
   console.log('Data sent: ', arduino)
-  res.json(arduino);
+  res.send(arduino);
   // res.json({
   //   timezone: data.timezone,
   //   current: data.currently.icon,
