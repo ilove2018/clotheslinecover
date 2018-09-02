@@ -21,11 +21,11 @@ request(options, function (error, response, body) {
   var data = JSON.parse(body);
   
   var arduino = 0;
-  if (data.currently.icon==='rain') {
-    arduino= 0;
-  }else {
-    arduino= 1;
-  }
+  // if (data.currently.icon==='rain') {
+  //   arduino= 0;
+  // }else {
+  //   arduino= 1;
+  // }
 
   console.log('Data sent: ', arduino)
   res.json(arduino);
