@@ -20,7 +20,7 @@ request(options, function (error, response, body) {
 
   var data = JSON.parse(body);
   
-  var arduino = 1;
+  var arduino = 0;
   // if (data.currently.icon==='rain') {
   //   arduino= 1;
   // }else {
